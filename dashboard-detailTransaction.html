@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transaction - #UMP152</title>
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/transition-page.css">
+	<link rel="icon" href="images/logo-red.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
+
+	<div class="wrapper">
+		
+		<nav class="side-nav">
+			
+			<div class="nav-logo">
+				<img src="images/logo-red.png">
+			</div>
+
+			<div class="nav-menu">
+				<ul>
+					<li><a href="dashboard.html"><i class="fas fa-chart-line"></i></a></li>
+					<li><a href="dashboard-product.html"><i class="fas fa-utensils"></i></a></li>
+					<li class="active"><a href="dashboard-transaction.html"><i class="fas fa-dolly-flatbed"></i></a></li>
+				</ul>
+			</div>
+
+		</nav><!-- Side Nav -->
+
+		<section class="top-nav">
+			
+			<div class="nav-branding">
+				<span><b>DAPUR</b> INDONESIA</span>
+			</div>
+			<div class="nav-top-menu">
+				<ul>
+					<li class="notif">
+						<a>
+							<i class="fas fa-bell"></i>
+						</a>
+
+						<div class="notif-popup">
+							<div class="header-notif">
+								<h4>Notification</h4>
+								<div class="notif-count">
+									<span>2</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#UMP152 - Prema Agus</h4>
+									<p>Pesanan Baru</p>
+									<span>14.30 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#M416AR - Ryan Ardito</h4>
+									<p>Pesanan Baru</p>
+									<span>11.15 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#AWM885 - Deva</h4>
+									<p>Pesanan Baru</p>
+									<span>22.50 - Kemarin</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#KAR998 - John Smith</h4>
+									<p>Pesanan Baru</p>
+									<span>09.30 - 2 Hari Lalu</span>
+								</div>
+							</div>
+
+						</div>
+
+					</li>
+					<li>
+						<a href="#">
+							<div class="img-profile">
+								<img src="images/profile1.jpg">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</section><!-- Top Nav -->
+
+		<section class="container-breadcrumb">
+			<div class="breadcrumb">
+				<a href="index.html">Home</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#">Account</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="dashboard-transaction.html">Transaction</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#" class="crumb-active">#UMP152</a>
+			</div>
+		</section><!-- Breadcrumb -->
+
+		<div class="wrapper-content">
+			<div class="container-content">
+				
+				<h1>Detail Transaksi</h1>
+				
+				<div class="row">
+					
+					<div class="col-md-12 col-sm-12">
+						<div class="widget widget-transaction">
+							<div class="transaction-id">
+								<h3>#UMP152</h3>
+								<span class="status status-biru">Baru</span>
+							</div>
+
+							<div class="row">
+								<div class="data-holder">
+									<div class="col-md-2">
+										<div class="cust-img">
+											<img src="images/profile1.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-md-10 label-container">
+										<div class="label-holder">
+											<label>Nama Customer</label>
+											<span>Prema Agus</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="data-holder">
+									<div class="col-md-2">
+										<div class="logo-data">
+											<img src="images/icon/clock.png" >
+										</div>
+									</div>
+									<div class="col-md-10 label-container">
+										<div class="label-holder">
+											<label>Tanggal</label>
+											<span>25 Maret 2019</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="data-holder">
+									<div class="col-md-2">
+										<div class="logo-data">
+											<img src="images/icon/place.png" >
+										</div>
+									</div>
+									<div class="col-md-10 label-container">
+										<div class="label-holder">
+											<label>Alamat</label>
+											<span>Jl. Lantang Hidung Gg. II No. 9, Sanur</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="data-holder">
+									<div class="col-md-2">
+										<div class="logo-data">
+											<img src="images/icon/rupiah.png" >
+										</div>
+									</div>
+									<div class="col-md-10 label-container">
+										<div class="label-holder">
+											<label>Total Harga</label>
+											<span class="harga">Rp. 240.000</span>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="table-list">
+									<div class="header-table">
+										<div class="col-md-1">
+											<span>No</span>
+										</div>
+										<div class="col-md-3">
+											<span>Produk</span>
+										</div>
+										<div class="col-md-3">
+											<span>Harga</span>
+										</div>
+										<div class="col-md-3">
+											<span>Banyak</span>
+										</div>
+										<div class="col-md-2">
+											<span>Sub-Total</span>
+										</div>
+									</div>
+									<div class="content-table">
+										<div class="col-md-1">
+											<span>1</span>
+										</div>
+										<div class="col-md-3">
+											<span>Ayam Bakar Taliwang</span>
+										</div>
+										<div class="col-md-3">
+											<span>Rp. 50.000</span>
+										</div>
+										<div class="col-md-3">
+											<span>2</span>
+										</div>
+										<div class="col-md-2">
+											<span>Rp. 100.000</span>
+										</div>
+									</div>
+									<div class="content-table">
+										<div class="col-md-1">
+											<span>2</span>
+										</div>
+										<div class="col-md-3">
+											<span>Ayam Betutu</span>
+										</div>
+										<div class="col-md-3">
+											<span>Rp. 40.000</span>
+										</div>
+										<div class="col-md-3">
+											<span>3</span>
+										</div>
+										<div class="col-md-2">
+											<span>Rp. 120.000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/transition.js"></script>
+	<script src="js/notif.js"></script>
+
+</body>
+
+</html>

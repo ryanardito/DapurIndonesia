@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/transition-page.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="icon" href="images/logo-red.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
+
+	<div class="wrapper">
+		
+		<nav class="side-nav">
+			
+			<div class="nav-logo">
+				<img src="images/logo-red.png">
+			</div>
+
+			<div class="nav-menu">
+				<ul>
+					<li><a href="dashboard.html"><i class="fas fa-chart-line"></i></a></li>
+					<li><a href="dashboard-product.html"><i class="fas fa-utensils"></i></a></li>
+					<li class="active"><a href="dashboard-transaction.html"><i class="fas fa-dolly-flatbed"></i></a></li>
+				</ul>
+			</div>
+
+		</nav><!-- Side Nav -->
+
+		<section class="top-nav">
+			
+			<div class="nav-branding">
+				<span><b>DAPUR</b> INDONESIA</span>
+			</div>
+			<div class="nav-top-menu">
+				<ul>
+					<li class="notif">
+						<a>
+							<i class="fas fa-bell"></i>
+						</a>
+
+						<div class="notif-popup">
+							<div class="header-notif">
+								<h4>Notification</h4>
+								<div class="notif-count">
+									<span>2</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#UMP152 - Prema Agus</h4>
+									<p>Pesanan Baru</p>
+									<span>14.30 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#M416AR - Ryan Ardito</h4>
+									<p>Pesanan Baru</p>
+									<span>11.15 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#AWM885 - Deva</h4>
+									<p>Pesanan Baru</p>
+									<span>22.50 - Kemarin</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#KAR998 - John Smith</h4>
+									<p>Pesanan Baru</p>
+									<span>09.30 - 2 Hari Lalu</span>
+								</div>
+							</div>
+
+						</div>
+
+					</li>
+					<li>
+						<a href="#">
+							<div class="img-profile">
+								<img src="images/profile1.jpg">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</section><!-- Top Nav -->
+
+		<section class="container-breadcrumb">
+			<div class="breadcrumb">
+				<a href="index.html">Home</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#">Account</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#" class="crumb-active">Transaction</a>
+			</div>
+		</section><!-- Breadcrumb -->
+
+		<section class="wrapper-content">
+			<div class="container-content">
+
+				<h1>Transaksi</h1>
+				
+				<div class="row">
+					
+					<div class="col-md-4 transaction">
+						<a href="dashboard-detailTransaction.html">
+							<div class="card">
+							
+								<div class="col-md-12 desc-product">
+									<h2>#UMP152 - Prema Agus</h2>
+									<p>
+										<i class="fas fa-map-marker-alt"></i>
+										Jl. Lantang Hidung Gg. II No. 9, Sanur
+									</p>
+									<p>26 Maret 2019</p>
+									<span>Rp. 220.000</span>
+								</div>
+								<div class="transaction-status status-biru">
+									<span>Baru</span>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 transaction">
+						<a href="dashboard-detailTransaction.html">
+							<div class="card">
+							
+								<div class="col-md-12 desc-product">
+									<h2>#M416AR - Ryan Ardito</h2>
+									<p>
+										<i class="fas fa-map-marker-alt"></i>
+										Jl. Gunung Himalaya X Blok G No 1, Gatsu
+									</p>
+									<p>26 Maret 2019</p>
+									<span>Rp. 130.000</span>
+								</div>
+								<div class="transaction-status status-kuning">
+									<span>Diproses</span>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 transaction">
+						<a href="dashboard-detailTransaction.html">
+							<div class="card">
+							
+								<div class="col-md-12 desc-product">
+									<h2>#AWM885 - Deva</h2>
+									<p>
+										<i class="fas fa-map-marker-alt"></i>
+										Jl. Noja Gang Kertapura No 1, Kesiman
+									</p>
+									<p>25 Maret 2019</p>
+									<span>Rp. 180.000</span>
+								</div>
+								<div class="transaction-status status-hijau">
+									<span>Selesai</span>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 transaction">
+						<a href="dashboard-detailTransaction.html">
+							<div class="card">
+							
+								<div class="col-md-12 desc-product">
+									<h2>#KAR998 - John Smith</h2>
+									<p>
+										<i class="fas fa-map-marker-alt"></i>
+										Jl. Lantang Hidung Gg. II No. 9, Sanur
+									</p>
+									<p>24 Maret 2019</p>
+									<span>Rp. 90.000</span>
+								</div>
+								<div class="transaction-status status-merah">
+									<span>Ditolak</span>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</section><!-- Wrapper content -->
+
+	</div>
+	
+
+	<script src="js/transition.js"></script>
+	<script src="js/notif.js"></script>
+</body>
+
+</html>

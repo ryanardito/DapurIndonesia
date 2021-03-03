@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/transition-page.css">
+	<link rel="icon" href="images/logo-red.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		
+		<nav class="side-nav">
+			
+			<div class="nav-logo">
+				<img src="images/logo-red.png">
+			</div>
+
+			<div class="nav-menu">
+				<ul>
+					<li class="active"><a href="dashboard.html"><i class="fas fa-chart-line"></i></a></li>
+					<li><a href="dashboard-product.html"><i class="fas fa-utensils"></i></a></li>
+					<li><a href="dashboard-transaction.html"><i class="fas fa-dolly-flatbed"></i></a></li>
+				</ul>
+			</div>
+
+		</nav>
+
+		<section class="top-nav">
+			
+			<div class="nav-branding">
+				<span><b>DAPUR</b> INDONESIA</span>
+			</div>
+			<div class="nav-top-menu">
+				<ul>
+					<li class="notif">
+						<a>
+							<i class="fas fa-bell"></i>
+						</a>
+
+						<div class="notif-popup">
+							<div class="header-notif">
+								<h4>Notification</h4>
+								<div class="notif-count">
+									<span>2</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#UMP152 - Prema Agus</h4>
+									<p>Pesanan Baru</p>
+									<span>14.30 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#M416AR - Ryan Ardito</h4>
+									<p>Pesanan Baru</p>
+									<span>11.15 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#AWM885 - Deva</h4>
+									<p>Pesanan Baru</p>
+									<span>22.50 - Kemarin</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#KAR998 - John Smith</h4>
+									<p>Pesanan Baru</p>
+									<span>09.30 - 2 Hari Lalu</span>
+								</div>
+							</div>
+
+						</div>
+
+					</li>
+					<li>
+						<a href="#">
+							<div class="img-profile">
+								<img src="images/profile1.jpg">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</section>
+
+		<section class="container-breadcrumb">
+			<div class="breadcrumb">
+				<a href="index.html">Home</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#">Account</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#" class="crumb-active">Dashboard</a>
+			</div>
+		</section>
+
+		<section class="wrapper-content">
+			<div class="container-content">
+				<h1>Dashboard</h1>
+				<div class="row">
+
+					<div class="col-md-4 col-sm-12 scale">
+						<div class="widget widget-green">
+							<div class="widget-icon">
+								<i class="fas fa-money-check-alt" id="money"></i>
+							</div>
+							<div class="widget-title">
+								<h3>Pemasukan</h3>
+							</div>
+							<div class="widget-value">
+								<span>Rp. 2.000.000</span>
+							</div>
+
+							<div class="curency">
+								<span>+ 2.5%</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-12 scale">
+						<a href="dashboard-product.html">
+							<div class="widget widget-purple">
+								<div class="widget-icon">
+									<i class="fas fa-utensils"></i>
+								</div>
+								<div class="widget-title">
+									<h3>Menu</h3>
+								</div>
+								<div class="widget-value">
+									<span>15 Item</span>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-12 scale">
+						<a href="dashboard-transaction.html">
+							<div class="widget widget-blue">
+								<div class="widget-icon">
+									<i class="fas fa-shipping-fast"></i>
+								</div>
+								<div class="widget-title">
+									<h3>Pesanan</h3>
+								</div>
+
+								<div class="widget-value container-pesanan">
+									<div class="row">
+
+										<div class="col-md-4 col-sm-4">
+											<div class="pesanan">
+												<span>10</span>
+											</div>
+											<div class="title-pesanan">
+												<h4>Baru</h4>
+											</div>
+										</div>
+
+										<div class="col-md-4 col-sm-4">
+											<div class="pesanan">
+												<span>5</span>
+											</div>
+											<div class="title-pesanan">
+												<h4>Proses</h4>
+											</div>
+										</div>
+
+										<div class="col-md-4 col-sm-4">
+											<div class="pesanan pesanan-last">
+												<span>32</span>
+											</div>
+											<div class="title-pesanan">
+												<h4>Selesai</h4>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 col-lg-6">
+						<div class="widget widget-orange chart">
+							<div class="widget-title">
+								<h3>Grafik Pemasukan</h3>
+							</div>
+							<div class="container-chart">
+								<canvas id="myChart"></canvas>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12 col-sm-12">
+						<div class="widget widget-green history">
+							<div class="widget-title">
+								<h3>Riwayat Transaksi</h3>
+							</div>
+							<div class="container-order">
+								<div class="row">
+
+									<div class="col-md-12 order">
+										<div class="list-order">
+											<div class="profile-cust">
+												<img src="images/profile1.jpg">
+											</div>
+											<div class="title-order">
+												<h3>#UMP152 - <b>Prema Agus</b></h3>
+												<span>2 Items - </span><span class="order-status biru">Baru</span>
+											</div>
+											<div class="amount-order">
+												<span>Rp. 220.000</span>
+											</div>
+											<div class="expand">
+												<i class="fas fa-angle-right"></i>
+											</div>
+										</div>
+										<div class="detail-order">
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail">
+														<img src="images/food/ayamtaliwang.jpg">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Ayam Bakar Taliwang</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 50.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>2</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 100.000</span>
+												</div>
+											</div><!-- List Detail -->
+
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail">
+														<img src="images/food/ayambetutu.jpg">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Ayam Betutu</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 40.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>3</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 120.000</span>
+												</div>
+											</div><!-- List-detail -->
+										</div><!-- Detail Order -->
+									</div><!-- Order -->
+
+									<div class="col-md-12 order">
+										<div class="list-order">
+											<div class="profile-cust">
+												<img src="images/profile2.jpg">
+											</div>
+											<div class="title-order">
+												<h3>#M416AR - <b>Ryan Ardito</b></h3>
+												<span>2 Items - </span><span class="order-status kuning">Diproses</span>
+											</div>
+											<div class="amount-order">
+												<span>Rp. 130.000</span>
+											</div>
+											<div class="expand">
+												<i class="fas fa-angle-right"></i>
+											</div>
+										</div>
+										<div class="detail-order">
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail">
+														<img src="images/food/kepiting.png">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Kepiting Asam Manis</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 100.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>1</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 100.000</span>
+												</div>
+											</div><!-- List Detail -->
+
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail">
+														<img src="images/food/nasigoreng.jpeg">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Nasi Goreng</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 15.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>2</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 30.000</span>
+												</div>
+											</div><!-- List-detail -->
+										</div><!-- Detail Order -->
+									</div><!-- Order -->
+
+									<div class="col-md-12 order">
+										<div class="list-order">
+											<div class="profile-cust">
+												<img src="images/profile3.jpg">
+											</div>
+											<div class="title-order">
+												<h3>#AWM885 - <b>Deva</b></h3>
+												<span>2 Items - </span><span class="order-status hijau">Selesai</span>
+											</div>
+											<div class="amount-order">
+												<span>Rp. 180.000</span>
+											</div>
+											<div class="expand">
+												<i class="fas fa-angle-right"></i>
+											</div>
+										</div>
+										<div class="detail-order">
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail">
+														<img src="images/food/ketoprak.png">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Ketoprak</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 15.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>4</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 60.000</span>
+												</div>
+											</div><!-- List Detail -->
+
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail">
+														<img src="images/food/sopbuntut.jpg">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Sop Buntut</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 30.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>4</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 120.000</span>
+												</div>
+											</div><!-- List-detail -->
+										</div><!-- Detail Order -->
+									</div><!-- Order -->
+
+									<div class="col-md-12 order">
+										<div class="list-order">
+											<div class="profile-cust">
+												<img src="images/profile4.jpg">
+											</div>
+											<div class="title-order">
+												<h3>#KAR998 - <b>John Smith</b></h3>
+												<span>2 Items - </span><span class="order-status merah">Ditolak</span>
+											</div>
+											<div class="amount-order">
+												<span>Rp. 90.000</span>
+											</div>
+											<div class="expand">
+												<i class="fas fa-angle-right"></i>
+											</div>
+										</div>
+										<div class="detail-order">
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail">
+														<img src="images/food/gudeg.jpg" alt="">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Gudeg</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 15.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>2</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 30.000</span>
+												</div>
+											</div><!-- List Detail -->
+
+
+											<div class="list-detail">
+												<div class="col-md-2">
+													<div class="img-detail">
+														<img src="images/food/rendang.jpg">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<label>Item</label>
+													<span><a href="#">Rendang</a></span>
+												</div>
+												<div class="col-md-2">
+													<label>Harga</label>
+													<span>Rp. 30.000</span>
+												</div>
+												<div class="col-md-2">
+													<label>Banyaknya</label>
+													<span>2</span>
+												</div>
+												<div class="col-md-2">
+													<label>Sub-Total</label>
+													<span>Rp. 60.000</span>
+												</div>
+											</div><!-- List-detail -->
+										</div><!-- Detail Order -->
+									</div><!-- Order -->
+
+
+
+								</div><!-- row -->
+							</div><!-- container-order -->
+						</div><!-- Widget -->
+					</div><!-- col-12 Riwayat Transaksi -->
+
+				</div><!-- row-grafik -->
+
+			</div><!-- container-content -->
+		</section><!-- wrapper-content -->
+
+	</div><!-- Wrapper -->
+
+	<script>
+		
+		$(document).ready(function(){
+			$listOrder = $('.list-order');
+
+			$listOrder.click(function(){
+				$(this).siblings('.detail-order').toggleClass('expand-active');
+				$(this).children('.expand').toggleClass('expand-down');
+			});
+		});
+
+	</script>
+
+	<script src="js/transition.js"></script>
+	<script src="js/notif.js"></script>
+
+
+<script>
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)',
+	yellow: 'rgb(255, 204, 0)',
+	opacityYellow: 'rgba(255, 204, 0, 0.3)'
+};
+
+(function(global) {
+	var Months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+
+	var COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+
+	var Samples = global.Samples || (global.Samples = {});
+	var Color = global.Color;
+
+	Samples.utils = {
+		// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+		srand: function(seed) {
+			this._seed = seed;
+		},
+
+		rand: function(min, max) {
+			var seed = this._seed;
+			min = min === undefined ? 0 : min;
+			max = max === undefined ? 1 : max;
+			this._seed = (seed * 9301 + 49297) % 233280;
+			return min + (this._seed / 233280) * (max - min);
+		},
+
+		numbers: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 1;
+			var from = cfg.from || [];
+			var count = cfg.count || 8;
+			var decimals = cfg.decimals || 8;
+			var continuity = cfg.continuity || 1;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var data = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = (from[i] || 0) + this.rand(min, max);
+				if (this.rand() <= continuity) {
+					data.push(Math.round(dfactor * value) / dfactor);
+				} else {
+					data.push(null);
+				}
+			}
+
+			return data;
+		},
+
+		labels: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 100;
+			var count = cfg.count || 8;
+			var step = (max - min) / count;
+			var decimals = cfg.decimals || 8;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var prefix = cfg.prefix || '';
+			var values = [];
+			var i;
+
+			for (i = min; i < max; i += step) {
+				values.push(prefix + Math.round(dfactor * i) / dfactor);
+			}
+
+			return values;
+		},
+
+		months: function(config) {
+			var cfg = config || {};
+			var count = cfg.count || 12;
+			var section = cfg.section;
+			var values = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = Months[Math.ceil(i) % 12];
+				values.push(value.substring(0, section));
+			}
+
+			return values;
+		},
+
+		color: function(index) {
+			return COLORS[index % COLORS.length];
+		},
+
+		transparentize: function(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+	};
+
+	// DEPRECATED
+	window.randomScalingFactor = function() {
+		return Math.round(Samples.utils.rand(-100, 100));
+	};
+
+	// INITIALIZATION
+
+	Samples.utils.srand(Date.now());
+
+	// Google Analytics
+	/* eslint-disable */
+	if (document.location.hostname.match(/^(www\.)?chartjs\.org$/)) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-28909194-3', 'auto');
+		ga('send', 'pageview');
+	}
+	/* eslint-enable */
+
+}(this));	
+
+$(document).ready(function(){
+	var ctx = document.getElementById('myChart').getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'line',
+	    data: {
+	        labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+	        datasets: [
+	        	{
+	        		label: 'Pemasukan',
+	        		fill: true,
+	        		backgroundColor: window.chartColors.opacityYellow,
+					borderColor: window.chartColors.yellow,
+					data: [
+					1500000,1650000,1200000,1600000,1450000,2250000,1800000,1450000,1800000,2000000,0,0],
+	        	}
+	        ]
+	    },
+	    options: {
+	    		maintainAspectRatio: false,
+				responsive: true,
+				title: {
+					display: true,
+					text: 'Statistik Pemasukan'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Month'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Value'
+						}
+					}]
+				}
+			}
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dapur Indonesia</title>
+	<link rel="icon" href="images/logo-red.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/chat.css">
+	<link rel="stylesheet" href="css/cart.css">
+
+
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/flickity.min.css">
+	<link rel="stylesheet" href="css/transition-page.css">
+
+	
+
+	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/search.js"></script>
+</head>
+<body>
+
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
+	<div class="bg-search d-flex i-ctr j-ctr">
+		<div class="max-content d-flex j-ctr" style="position: relative;">
+		<a href="#" id="close" ><i class="fas fa-times"></i></a>
+		<div class="search">
+			<div class="form-group">
+				<input type="text" placeholder="Cari makanan atau minuman yang anda inginkan">
+				<a href="halaman/listproduct.html">Cari</a>
+			</div><!-- form-group -->
+		</div><!-- search -->
+		</div>	
+	</div><!-- bg-search -->
+
+	<section class="bg-nav" id="bg-nav">
+		<div class="btn-burger" >
+			<i class="fas fa-bars"></i>
+		</div>
+		<div class="max-content">
+			<div class="row">
+				<div class="responsive-tablet-12">
+					<a href="index.html"><img src="images/branding-red.png"></a>
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="index.html" class="active">Beranda</a>
+								<a href="#bg-categories">Kategori</a>
+								<a href="login.html">Masuk</a>
+								<a href="register.html" class="daftar">Daftar</a>
+								<a href="#" class="line">|</a>
+								<a href="#"><i class="fas fa-search" id="search"></i></a>
+								<span onclick="toggleCart();" id="icon-cart"><i class="fas fa-shopping-cart"></i></span>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-responsive">
+						<div class="btn-close" >
+							<i class="fas fa-times"></i>
+						</div>
+						<div class="responsive-logo">
+							<img src="images/branding-white.png">
+						</div>
+						<div class="list-menu">
+							<ul>
+								<li><a href="index.html" class="active">Beranda</a></li>
+								<li><a href="index.html">Kategori</a></li>
+								<li><a href="login.html">Masuk</a></li>
+								<li><a href="register.html">Daftar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- responsive-tablet-12 -->
+			</div><!-- row -->
+		</div><!-- max-content -->
+	</section><!-- bg-nav -->
+
+	<section class="bg-header">
+		<div class="row">
+			<div class="responsive-tablet-6 pcleft">
+				<div class="header-left">
+					<h1 class="capt">Tidak ada yang bisa mengalahkan nikmat <span>masakan</span> rumahan.</h1>
+					<h3 class="capt">Beli makanan rumahan hanya di <span>DapurIndonesia</span></h3>
+					<div>
+						<a href="halaman/listproduct.html" class="pesan">Pesan</a>
+						<a href="#bg-categories" class="jelajahi">Jelajahi</a>
+					</div>
+				</div><!-- header-left -->
+			</div><!-- responsive-tablet-6 -->
+			<div class="responsive-tablet-6 pcright">
+				<img class="imgpc" src="images/homepage/header.png">
+				<img class="imgmobile" src="images/homepage/header2.png">
+			</div>
+		</div><!-- row -->
+ 	</section><!-- bg-header -->
+
+
+
+ 	
+
+	<section class="bg-cart row" id="cart">
+		<div class="responsive-laptop-12">
+			<div class="wreaper-cart" id="">
+				<div class="cart">
+
+					<div class="bg-judul-cart">
+						<div class="btn-close-c" onclick="toggleCart()">
+							<div class="line-close2"></div>
+							<div class="line-close3"></div>
+						</div>
+
+						<div class="judul-cart">
+							<h4>Keranjang</h4>
+						</div>
+					</div>
+
+					<div class="dalem-cart">
+
+						<div class="responsive-laptop-12">
+
+							<div class="isi-cart">
+							<div class="overlay-isi-cart">
+								<h3>Batalkan Produk</h3>
+							</div>
+								<div class="responsive-laptop-4">
+									<div class="img-cart">
+										<img src="images/food/satepadang.jpg" width="100%">
+									</div>
+								</div>
+
+								<div class="responsive-laptop-6">
+									<div class="text-cart">
+										<h4>Sate Gajah Gila</h4>
+										
+										<div class="t-cart">
+											<p><span></span> Extra Pedas </p>
+											<a href="">Detail</a>
+										</div>
+										
+										<!-- <p><a href="">Detail</a></p> -->
+
+										<b>Rp. 15.000</b>
+									</div>
+								</div>
+
+								<div class="responsive-laptop-2">
+									<div class="btn-cart">
+										<button class="btn-plus">+</button>
+										<input type="number" class="qty" value="1" >
+										<button class="btn-min">-</button>
+									</div>
+								</div>
+
+								<div class="btn-hapus">
+									<a href="">
+										<i class="fas fa-times"></i>
+									</a>
+								</div>
+							</div>
+
+						</div><!-- responsive-laptop-12  -->
+
+						<div class="responsive-laptop-12">
+
+							<div class="isi-cart">
+							<div class="overlay-isi-cart">
+								<h3>Batalkan Produk</h3>
+							</div>
+								<div class="responsive-laptop-4">
+									<div class="img-cart">
+										<img src="images/food/satepadang.jpg" width="100%">
+									</div>
+								</div>
+
+								<div class="responsive-laptop-6">
+									<div class="text-cart">
+										<h4>Sate Gajah Gila</h4>
+										
+										<div class="t-cart">
+											<p><span></span> Extra Pedas </p>
+											<a href="">Detail</a>
+										</div>
+										
+										<!-- <p><a href="">Detail</a></p> -->
+
+										<b>Rp. 15.000</b>
+									</div>
+								</div>
+
+								<div class="responsive-laptop-2">
+									<div class="btn-cart">
+										<button class="btn-plus">+</button>
+										<input type="number" class="qty" value="1" >
+										<button class="btn-min">-</button>
+									</div>
+								</div>
+
+								<div class="btn-hapus">
+									<a href="">
+										<i class="fas fa-times"></i>
+									</a>
+								</div>
+							</div>
+
+						</div><!-- responsive-laptop-12  -->
+
+						<div class="responsive-laptop-12">
+							<div class="bg-total">
+								<h5>Subtotal (2 item)</h5>
+								<p>Rp. 30.000</p>
+								<br>
+
+								<h5>Total Cashback</h5>
+								<p>Rp. 10.000</p>
+								<br>
+								
+								<h3>Cart Subtotal</h3>
+								<h4>Rp. 30.000</h4>
+							</div>
+						</div>
+
+						<div class="responsive-laptop-12">
+							<div class="btn-p-checkout">
+								<a href="checkout.html">Bayar</a>
+							</div>
+						</div>
+
+					</div><!-- dalem-cart  -->
+					
+				</div><!-- cart  -->
+			</div><!-- wreaper-cart  -->
+		</div><!-- responsive-laptop-12  -->
+	</section><!-- bg-cart  --> 
+
+	<!-- ###### CHATTING-FORM ###### -->
+
+	<div class="icon-chat" onclick="oChat();" id="icon">
+		<img src="images/icon/icon.png">
+	</div>
+
+	<section class="bg-chat" id="myChat">
+		<div class="responsive-laptop-12">
+
+			<div class="responsive-laptop-12">
+			<div class="bg-header-chat" onclick="cChat();">
+				<p>tanyakan kebingunganmu disini</p>
+				<h3>Ask Any Question</h3>
+
+				<img src="images/icon/favicon.png" width="50px">
+			</div>
+			</div><!-- header-chat -->
+			
+			<div class="responsive-laptop-12">
+				<div class="btn-to-chat" id="noChat">
+					<img src="images/icon/icon-chat.png" width="200px">
+					<h3>Ajukan Pertanyaanmu</h3>
+					<p>Klik button dibawah ini untuk memulai pertanyaan</p>
+					<div class="btn-for-chat" onclick="openChat();">
+						<span>Mulai Chat</span>
+					</div>
+				</div>
+			</div><!-- btn-to-chat -->
+		
+			<div class="isi-chat" id="letsChat">
+				<div class="responsive-laptop-12">
+				<div class="chat">
+					<div class="bot-chat" id="bot-chat">
+							
+						<div class="bot-img">
+							<img src="images/logo-red.png" width="100%">
+						</div>
+
+						<div class="chat-admin">
+							<p>Ada yang bisa kami bantu ?</p>
+						</div>
+
+					</div>
+				</div>
+				</div>
+			</div><!-- isi-chat -->
+
+			<div class="responsive-laptop-12">
+			<div class="bg-controls">
+
+				<div class="control">
+					<i class="fas fa-plus"></i>
+					<input style="cursor: text;" type="text" name="" placeholder="Type here to asking anything" id="text">
+					<i class="fas fa-paper-plane" id="send"></i>
+				</div>
+
+				<div class="control-1">
+					<ul>
+						<li><img src="images/icon/camera.png" width="40px"></li>
+						<li><img src="images/icon/image.png" width="40px"></li>
+						<li><img src="images/icon/plus.png" width="40px"></li>
+						<li><img src="images/icon/mic.png" width="40px"></li>
+						<li><img src="images/icon/doc.png" width="40px"></li>
+					</ul>
+				</div>
+			</div>				
+			</div><!-- bg-controls -->
+		
+
+		</div>
+	</section>
+
+ 	<section class="bg-categories" id="bg-categories">
+ 		<div class="max-content">
+ 			<div class="row">
+ 				<div class="responsive-tablet-12">
+ 					<h1>Menu Favorit</h1>
+ 					<div class="main-carousel">
+		              <div class="carousel" data-flickity>
+		              	<a href="produk.html">
+		                <div class="carousel-cell">
+		                	<div class="img img1">
+
+		                	</div><!-- img -->
+		                	<h3 class="capt">Kepiting Asam Manis</h3>
+		                	<h5>Rp. 150.000</h5>
+		                	<a href="halaman/kedai.html"><h6 class="capt">Indah Seafood - Denpasar</h6></a>
+		                </div><!-- carousel-cell -->
+		            	</a>
+		                <a href="produk.html">
+		                <div class="carousel-cell">
+		                	<div class="img img6">
+
+		                	</div><!-- img -->
+		                	<h3 class="capt">Es Teler</h3>
+		                	<h5>Rp. 25.000</h5>
+		                	<a href="halaman/kedai.html"><h6 class="capt">Es Teler 77 - Makassar</h6></a>
+		                </div><!-- carousel-cell -->
+		            	</a>
+		                <a href="produk.html">
+		                <div class="carousel-cell">
+		                	<div class="img img2">
+
+		                	</div><!-- img -->
+		                	<h3 class="capt">Rendang</h3>
+		                	<h5>Rp. 40.000</h5>
+		                	<a href="halaman/kedai.html"><h6 class="capt">Rumah Makan Padang Sari - Depok</h6></a>
+		                </div><!-- carousel-cell -->
+		            	</a>
+		                <a href="produk.html">
+		                <div class="carousel-cell">
+		                	<div class="img img3">
+
+		                	</div><!-- img -->
+		                	<h3 class="capt">Nasi Kebuli</h3>
+		                	<h5>Rp. 35.000</h5>
+		                	<a href="halaman/kedai.html"><h6 class="capt">Kebuli 55 - Semarang</h6></a>
+		                </div><!-- carousel-cell -->
+		            	</a>
+		                <a href="produk.html">
+		                <div class="carousel-cell">
+		                	<div class="img img4">
+
+		                	</div><!-- img -->
+		                	<h3 class="capt">Gado - Gado</h3>
+		                	<h5>Rp. 20.000</h5>
+		                	<a href="halaman/kedai.html"><h6 class="capt">Warung H. Slamet - Surabaya</h6></a>
+		                </div><!-- carousel-cell -->
+		            	</a>
+		                <a href="produk.html">
+		                <div class="carousel-cell">
+		                	<div class="img img7">
+
+		                	</div><!-- img -->
+		                	<h3 class="capt">Es Pisang Ijo</h3>
+		                	<h5>Rp. 20.000</h5>
+		                	<a href="halaman/kedai.html"><h6 class="capt">Warung Bu Hadi - Palembang</h6></a>
+		                </div><!-- carousel-cell -->
+		            	</a>
+		                <a href="produk.html">
+		                <div class="carousel-cell">
+		                	<div class="img img5">
+
+		                	</div><!-- img -->
+		                	<h3 class="capt">Sate Padang</h3>
+		                	<h5>Rp. 150.000</h5>
+		                	<a href="halaman/kedai.html"><h6 class="capt">Sate Padang Aju Ramon - Jakarta</h6></a>
+		                </div><!-- carousel-cell -->
+		            	</a>
+		              </div>
+		            </div><!-- main-carousel -->
+ 				</div><!-- responsive-tablet-12 -->
+ 				<div class="responsive-tablet-12 categories">
+ 					<div class="label">
+ 						<h1 class="capt">Kategori</h1>
+ 					</div><!-- label -->
+ 					<div class="item">
+ 						<h2 class="capt">Makanan</h2>
+ 						<div class="responsive-tablet-3 responsive-m-6">
+ 							<div class="cat-item">
+ 								<div class="img img1"></div><!-- img -->
+ 								<div class="text">
+ 									<h4 class="capt">Gudeg</h4>
+ 								</div><!-- text -->
+ 							</div><!-- cat-item -->
+ 						</div><!-- responsive-tablet-3 -->
+ 						<div class="responsive-tablet-3 responsive-m-6">
+ 							<div class="cat-item">
+ 								<div class="img img2"></div><!-- img -->
+ 								<div class="text">
+ 									<h4 class="capt">Ayam <br> Betutu</h4>
+ 								</div><!-- text -->
+ 							</div><!-- cat-item -->
+ 						</div><!-- responsive-tablet-3 -->
+ 						<div class="responsive-tablet-3 responsive-m-6">
+ 							<div class="cat-item">
+ 								<div class="img img3"></div><!-- img -->
+ 								<div class="text">
+ 									<h4 class="capt">Ketoprak</h4>
+ 								</div><!-- text -->
+ 							</div><!-- cat-item -->
+ 						</div><!-- responsive-tablet-3 -->
+ 						<div class="responsive-tablet-3 responsive-m-6">
+ 							<div class="cat-item">
+ 								<div class="img img4"></div><!-- img -->
+ 								<div class="text">
+ 									<h4 class="capt">Ayam <br> Geprek</h4>
+ 								</div><!-- text -->
+ 							</div><!-- cat-item -->
+ 						</div><!-- responsive-tablet-3 -->
+ 						<h2 class="capt">Minuman</h2>
+ 						<div class="responsive-tablet-3 responsive-m-6">
+ 							<div class="cat-item">
+ 								<div class="img img5"></div><!-- img -->
+ 								<div class="text">
+ 									<h4 class="capt">Es <br> Cendol</h4>
+ 								</div><!-- text -->
+ 							</div><!-- cat-item -->
+ 						</div><!-- responsive-tablet-3 -->
+ 						<div class="responsive-tablet-3 responsive-m-6">
+ 							<div class="cat-item">
+ 								<div class="img img6"></div><!-- img -->
+ 								<div class="text">
+ 									<h4 class="capt">Es <br> Buah</h4>
+ 								</div><!-- text -->
+ 							</div><!-- cat-item -->
+ 						</div><!-- responsive-tablet-3 -->
+ 						<div class="responsive-tablet-3 responsive-m-6">
+ 							<div class="cat-item">
+ 								<div class="img img7"></div><!-- img -->
+ 								<div class="text">
+ 									<h4 class="capt">Jus <br> Mangga</h4>
+ 								</div><!-- text -->
+ 							</div><!-- cat-item -->
+ 						</div><!-- responsive-tablet-3 -->
+ 						<div class="responsive-tablet-3 responsive-m-6">
+ 							<div class="cat-item">
+ 								<div class="img img8"></div><!-- img -->
+ 								<div class="text">
+ 									<h4 class="capt">Jus <br> Pisang</h4>
+ 								</div><!-- text -->
+ 							</div><!-- cat-item -->
+ 						</div><!-- responsive-tablet-3 -->
+ 					</div><!-- item -->
+ 				</div><!-- responsive-tablet-12 -->
+ 			</div><!-- row -->
+ 		</div><!-- max-content -->
+ 	</section><!-- bg-categories -->
+
+ 	<section class="bg-tutorial" id="bg-tutorial">
+		<div class="row">
+			<div class="responsive-tablet-6 md-left">
+				<img src="images/homepage/tutor.png" class="imgtutor">
+			</div><!-- responsive-tablet-6 -->
+			<div class="responsive-tablet-6 flex">
+				<div class="max-content">
+				<div class="wrap-tutor">
+					<h1 class="capt">Cara Menggunakan <br><span>Dapur Indonesia</span></h1>
+					<div class="responsive-tablet-6">
+						<div class="tutor-item">
+							<img src="images/icon/placeholder.png">
+							<h3>Pilih Lokasi</h3>
+							<p>Pesan makanan yang sesuai dengan lokasi kamu. Karena kami hanya dapat mengirim maksimal sejauh 25km.</p>
+						</div><!-- tutor-item -->
+					</div><!-- responsive-tablet-6 -->
+					<div class="responsive-tablet-6">
+						<div class="tutor-item">
+							<img src="images/icon/select.png">
+							<h3>Pilih Makanan</h3>
+							<p>Setelah menentukan lokasi, pilih makanan yang kamu inginkan.</p>
+						</div><!-- tutor-item -->
+					</div><!-- responsive-tablet-6 -->
+					<div class="responsive-tablet-6">
+						<div class="tutor-item">
+							<img src="images/icon/credit-card.png">
+							<h3>Metode Pembayaran</h3>
+							<p>Setelah itu, pilih metode pembayaran sesuai yang kamu inginkan. Bisa melalui Indomaret, atau mobile banking.</p>
+						</div><!-- tutor-item -->
+					</div><!-- responsive-tablet-6 -->
+					<div class="responsive-tablet-6">
+						<div class="tutor-item">
+							<img src="images/icon/tracking.png">
+							<h3>Tracking Pengiriman</h3>
+							<p>Pilih metode pengiriman, lalu kamu dapat melihat pengiriman tersebut untuk memastikan pengiriman sampai dengan sempurna.</p>
+						</div><!-- tutor-item -->
+					</div><!-- responsive-tablet-6 -->
+				</div><!-- wrap-tutor -->
+			</div><!-- max-content -->
+			</div><!-- responsive-tablet-6 -->
+		</div><!-- row -->
+ 	</section><!-- bg-tutorial -->
+
+ 	<section class="bg-join" id="bg-join">
+ 		<div class="max-content">
+ 			<div class="row">
+ 				<div class="responsive-tablet-6 left">
+ 					<h1 class="capt">Bergabung Bersama <br> <span>Dapur Indonesia</span></h1>
+ 					<p>Mari bergabung bersama <span>Dapur Indonesia</span> untuk memajukan usaha anda ke level berikutnya. Dengan cara klik tombol di bawah ini dan kami akan mengarahkan anda ke pendaftaran usaha anda.</p>
+ 					<div  class="button"><a href="register.html">Daftar</a></div>
+ 				</div><!-- responsive-tablet-6 -->
+ 				<div class="responsive-tablet-6 right">
+ 					<img src="images/homepage/join.png">
+ 				</div><!-- responsive-tablet-6 -->
+ 			</div><!-- row -->
+ 		</div><!-- max-content -->
+ 	</section><!-- bg-join -->
+
+ 	<section class="bg-testimoni">
+ 		<div class="max-content">
+ 			<div class="row">
+ 				<div class="responsive-tablet-12">
+ 					<h1 class="capt">Testimoni Pengguna<br><span>Dapur Indonesia</span></h1>
+ 					<div class="main-carousel">
+		             	<div class="carousel" data-flickity>
+			                <div class="carousel-cell">
+			                	<div class="img img1">
+
+			                	</div><!-- img -->
+			                	<p>"Aku suka banget sama aplikasi ini, cara makai nya gampang, pilihan makanan nya juga banyak banget!"</p>
+			                	<h3>- Feli Rasmanjani -</h3>
+			                </div><!-- carousel-cell -->
+			                <div class="carousel-cell">
+			                	<div class="img img2">
+
+			                	</div><!-- img -->
+			                	<p>"Dapur Indonesia memudahkan saya untuk memesan makanan. Sukses terus untuk karya anak bangsa"</p>
+			                	<h3>- Adira Azzahra -</h3>
+			                </div><!-- carousel-cell -->
+			                <div class="carousel-cell">
+			                	<div class="img img3">
+
+			                	</div><!-- img -->
+			                	<p>"Salut sama karya anak bangsa, aplikasi yang mudah di gunakan, user interface nya friendly banget, dan juga user experience nya yang sangat bagus"</p>
+			                	<h3>- Deri Ramadani -</h3>
+			                </div><!-- carousel-cell -->
+			            </div><!-- carousel -->
+			        </div><!-- main-caousel -->
+ 					<div class="responsive-tablet-4">
+ 						<div class="testimoni">
+ 							<div class="img img1">
+ 								
+ 							</div><!-- img -->
+ 							<p>"Aku suka banget sama aplikasi ini, cara makai nya gampang, pilihan makanan nya juga banyak banget!"</p>
+ 							<h3>- Feli Rasmanjani -</h3>
+ 						</div><!-- testimoni -->
+ 					</div><!-- responsive-tablet-4 -->
+ 					<div class="responsive-tablet-4">
+ 						<div class="testimoni center">
+ 							<div class="img img2">
+ 								
+ 							</div><!-- img -->
+ 							<p>"Dapur Indonesia memudahkan saya untuk memesan makanan. Sukses terus untuk karya anak bangsa"</p>
+ 							<h3>- Adira Azzahra -</h3>
+ 						</div><!-- testimoni -->
+ 					</div><!-- responsive-tablet-4 -->
+ 					<div class="responsive-tablet-4">
+ 						<div class="testimoni">
+ 							<div class="img img3">
+ 								
+ 							</div><!-- img -->
+ 							<p>"Salut sama karya anak bangsa, aplikasi yang mudah di gunakan, user interface nya friendly banget, dan juga user experience nya yang sangat bagus"</p>
+ 							<h3>- Deri Ramadani -</h3>
+ 						</div><!-- testimoni -->
+ 					</div><!-- responsive-tablet-4 -->
+ 				</div><!-- responsive-tablet-12 -->
+ 			</div><!-- row -->
+ 		</div><!-- max-content -->
+ 	</section><!-- bg-testimoni -->
+
+ 	<section class="bg-faq">
+ 		<img src="images/homepage/faq.png">
+ 		<div class="max-content">
+ 			<h1 class="capt">Pertanyaan <br> Yang Sering Diajukan</h1>
+ 			<div class="row">
+ 				<div class="responsive-tablet-7">
+ 					<div class="faq-item">
+ 						<div class="question">
+ 							<p>Bisa ga kalau saya batalin pesanan kapanpun ?</p>
+ 							<i class="fas fa-angle-down"></i>
+ 						</div><!-- question -->
+ 						<div class="answer">
+ 							<p>Bisa dong, kamu bisa batalin pesanan kapanpun yang kamu mau. Ada tapinya nih, syarat dan ketentuan berlaku ya. Kamu bisa cek syarat dan ketentuan <a href="#">di sini !</a></p>
+ 						</div><!-- answer -->
+ 					</div><!-- faq-item -->
+ 					<div class="faq-item">
+ 						<div class="question">
+ 							<p>Gimana kalau bayar nya itu pas makanan udah sampai ?</p>
+ 							<i class="fas fa-angle-down"></i>
+ 						</div><!-- question -->
+ 						<div class="answer">
+ 							<p>Gapapa kok, kami menyediakan metode pembayaran tidak hanya melalui m-banking ataupun kartu kredit, tapi bisa juga bayar di rumah !</p>
+ 						</div><!-- answer -->
+ 					</div><!-- faq-item -->
+ 					<div class="faq-item">
+ 						<div class="question">
+ 							<p>Kirim pakai gojek atau grab bias ga sih ?</p>
+ 							<i class="fas fa-angle-down"></i>
+ 						</div><!-- question -->
+ 						<div class="answer">
+ 							<p>Bisa banget, metode pengiriman Dapur Indonesia sangat lengkap, kamu bisa menggunakan JNE, JNT, GO-JEK, GRAB, dll.</p>
+ 						</div><!-- answer -->
+ 					</div><!-- faq-item -->
+ 				</div><!-- responsive-tablet-6 -->
+ 			</div><!-- row -->
+ 		</div><!-- max-content -->
+ 	</section><!-- bg-faq -->
+
+ 	<section class="bg-app" id="bg-app">
+ 		<div class="row">
+ 			<div class="responsive-tablet-7 left">
+ 				<img src="images/homepage/app.png">
+ 			</div><!-- responsive-tablet-7 -->
+ 			<div class="responsive-tablet-5 right">
+ 				<div class="content-right">
+ 					<h2 class="capt">Dapatkan <span>Aplikasi</span></h2>
+ 					<p>Kami akan selalu memudahkan anda dalam memesan makanan. <span>Dapur Indonesia</span> dapat diakses dalam website maupun aplikasi mobile.</p>
+ 					<a href="#bg-app" id="apple">
+ 						<img src="images/homepage/apple.png">
+ 					</a>
+ 					<a href="#bg-app" id="play">
+ 						<img src="images/homepage/google.png">
+ 					</a>
+ 				</div>
+ 			</div><!-- responsive-tablet-5 -->
+ 		</div><!-- row -->
+ 	</section><!-- bg-app -->
+
+ 	<section class="bg-about">
+ 		<div class="row">
+ 			<div class="responsive-tablet-6 tablet">
+ 				<div class="max-content">
+ 					<h1 class="capt">Tentang <span>Kami</span></h1>
+ 					<p><span>Dapur Indonesia</span> adalah sebuah platform untuk memajukan usaha lokal seseorang ke level yang lebih tinggi. Di platform ini seseorang dapat membeli makanan yang telah di iklankan oleh si penjual. Maka, usaha dari si penjual tersebut akan lebih mudah untuk dikenal.</p>
+ 					<a href="halaman/tentang.html">Selengkapnya</a>
+ 				</div><!-- max-content -->
+ 			</div><!-- responsive-tablet-6 -->
+ 			<div class="responsive-tablet-6 right">
+ 				<img src="images/homepage/about.png">
+ 			</div><!-- responsive-tablet-6 -->
+ 		</div><!-- row -->
+ 	</section><!-- bg-about -->
+
+ 	<section class="bg-footer">
+ 		<div class="max-content">
+ 			<div class="row">
+ 				<div class="responsive-tablet-3">
+ 					<div class="about">
+ 						<img src="images/branding-red.png">
+ 						<p><span>Dapur Indonesia</span> adalah sebuah platform untuk memajukan usaha lokal seseorang ke level yang lebih tinggi.</p>
+ 						<ul>
+ 							<li>
+ 								<a href="#"><i class="fab fa-facebook"></i></a>
+ 							</li>
+ 							<li style="margin: 0 10px">
+ 								<a href="#"><i class="fab fa-twitter"></i></a>
+ 							</li>
+ 							<li style="margin: 0 10px">
+ 								<a href="#"><i class="fab fa-instagram"></i></a>
+ 							</li>
+ 							<li style="margin: 0 10px">
+ 								<a href="#"><i class="fab fa-youtube"></i></a>
+ 							</li>
+ 						</ul>
+ 					</div><!-- about -->
+ 				</div><!-- responsive-tablet-3 -->
+ 				<div class="responsive-tablet-3">
+ 					<div class="menu">
+ 						<div class="max-content">
+ 							<h2>MENU</h2>
+ 							<ul>
+ 								<li><a href="#bg-categories">Kategori</a></li>
+ 								<li><a href="#bg-join">Cara Menggunakan</a></li>
+ 								<li><a href="register.html">Berbabung</a></li>
+ 								<li><a href="#bg-faq">Pertanyaan</a></li>
+ 								<li><a href="halaman/tentang.html">Tentang</a></li>
+ 							</ul>
+ 						</div>
+ 					</div><!-- menu -->
+ 				</div><!-- responsive-tablet-3 -->
+ 				<div class="responsive-tablet-3">
+ 					<div class="contact">
+ 						<div class="max-content">
+ 							<h2>KONTAK</h2>
+ 							<ul>
+ 								<li><i class="fas fa-envelope"></i>info@dapurindo.com</li>
+ 								<li><i class="fas fa-phone"></i>+62 8133 9760 178</li>
+ 								<li><i class="fas fa-map"></i>Sanur, Bali, Indonesia</li>
+ 							</ul>
+ 						</div><!-- max-content -->
+ 					</div><!-- contact -->
+ 				</div><!-- responsive-tablet-3 -->
+ 				<div class="responsive-tablet-3">
+ 					<div class="subs">
+						<h2>BERLANGGANAN</h2>
+						<p>Berlangganan Bersama kami untuk mendapat info terbaru dari kami.</p>
+						<input type="text" placeholder="nama@email.com">
+						<a href="#">Kirim</a>
+ 					</div><!-- subs -->
+ 				</div><!-- responsive-tablet-3 -->
+ 			</div><!-- row -->
+ 			<hr>
+ 			<div class="bottom">
+ 				<p><i class="far fa-copyright"></i>2019 <span>DapurIndonesia</span></p>
+ 				<p>Made With <i class="fas fa-heart"></i> in Bali, for Vocomfest Competition.</p>
+ 			</div><!-- bottom -->
+ 		</div><!-- max-content -->
+ 	</section><!-- bg-footer -->
+</body>
+<script type="text/javascript">
+	$('.carousel').flickity({
+        // options
+        autoPlay: 2500, wrapAround: true
+      });
+</script>
+<script src="js/transition.js"></script>
+
+<!-- ###### SCRIPT-CHATTING-FORM ###### -->
+  <script src="js/jquery.js"></script>
+  <script>
+  	$(document).ready(function(){
+  		//declare var
+  		$textbox = $('#text');
+  		$btn_send = $('#send');
+  		$chat = $('.chat');
+  		$latestChat = $chat.html();
+
+
+  		//Program
+
+  		//When Enter was pressed
+  		$textbox.keypress(function(event){
+  			if (event.which == 13) {
+  				$btn_send.click();
+  			}
+  		});
+
+  		//When btn_send was clicked
+  		$btn_send.click(function(){
+  			$controls = "<div class='our-chat'><div class='img-profile'><div class='acc'></div><div class='img-ppl'></div></div><div class='chat-control'><p>"+ $textbox.val() +"</p></div></div>";
+
+  			$chat.html($latestChat + $controls);
+  			$latestChat = $chat.html();
+  			$chat.scrollTop($chat.prop('scrollHeight'));
+  			$textbox.val("");
+  		});
+
+  	});
+
+  	function oChat() {
+		// body...
+		document.getElementById("icon").style.background = "#555";
+		document.getElementById("icon").style.bottom = "50vh";
+		document.getElementById("icon").style.width = "50px";
+		document.getElementById("icon").style.height = "50px";
+		document.getElementById("icon").style.opacity = "0";
+
+		document.getElementById("myChat").style.transition = ".5s .2s ease-in-out";
+		document.getElementById("myChat").style.right = "0px";
+		document.getElementById("myChat").style.opacity = "1";
+		document.getElementById("noChat").style.animation = "chats .9s ease-in-out";
+
+
+	}
+	function cChat() {
+		// body...
+		document.getElementById("icon").style.background = "#ff3b30";
+		document.getElementById("icon").style.bottom = "50px";
+		document.getElementById("icon").style.width = "70px";
+		document.getElementById("icon").style.height = "70px";
+		document.getElementById("icon").style.opacity = "1";
+
+		document.getElementById("myChat").style.transition = ".5s ease-in-out";
+		document.getElementById("myChat").style.right = "-500px";
+		document.getElementById("myChat").style.opacity = "0";
+	}
+
+  </script>
+
+  <script type="text/javascript">
+  	function openChat() {
+		// body...
+
+		document.getElementById("letsChat").style.display = "block";
+		document.getElementById("noChat").style.display = "none";
+		document.getElementById("bot-chat").style.animation = "chat .5s ease-in-out";
+
+	}
+  </script>
+
+  <script type="text/javascript">
+
+ 
+	$('.btn-burger').click(function(){
+		$('.menu-responsive').toggleClass('expand-menu');
+	});
+
+	$('.btn-close').click(function(){
+		$('.menu-responsive').toggleClass('expand-menu');
+	});
+
+  	$('.btn-plus').click(function(){
+  		$currentVal = $(this).siblings('.qty').val();
+  		$currentVal = parseInt($currentVal) + 1;
+  		$(this).siblings('.qty').val($currentVal);
+  	});
+
+  	$('.btn-min').click(function(){
+  		$currentVal = $(this).siblings('.qty').val();
+  		$currentVal = parseInt($currentVal) - 1;
+  		$(this).siblings('.qty').val($currentVal);
+  	});
+	
+	$('.btn-hapus').mouseover(function(){
+		$(this).siblings('.overlay-isi-cart').css({'width':'100%'});
+	});
+	$('.btn-hapus').mouseleave(function(){
+		$(this).siblings('.overlay-isi-cart').css({'width':'0'});
+	});
+
+  	function toggleCart() {
+		// body...
+
+		// document.getElementById("cart").style.display = "block";
+		$('.wreaper-cart').toggleClass('cart-active');
+	
+
+	}
+  </script>
+</html>

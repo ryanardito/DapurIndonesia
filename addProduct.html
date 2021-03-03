@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product</title>
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/transition-page.css">
+	<link rel="icon" href="images/logo-red.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		
+		<nav class="side-nav">
+			
+			<div class="nav-logo">
+				<img src="images/logo-red.png">
+			</div>
+
+			<div class="nav-menu">
+				<ul>
+					<li><a href="dashboard.html"><i class="fas fa-chart-line"></i></a></li>
+					<li class="active"><a href="dashboard-product.html"><i class="fas fa-utensils"></i></a></li>
+					<li><a href="dashboard-transaction.html"><i class="fas fa-dolly-flatbed"></i></a></li>
+				</ul>
+			</div>
+
+		</nav><!-- Side Nav -->
+
+		<section class="top-nav">
+			
+			<div class="nav-branding">
+				<span><b>DAPUR</b> INDONESIA</span>
+			</div>
+			<div class="nav-top-menu">
+				<ul>
+					<li class="notif">
+						<a>
+							<i class="fas fa-bell"></i>
+						</a>
+						<div class="notif-popup">
+							<div class="header-notif">
+								<h4>Notification</h4>
+								<div class="notif-count">
+									<span>2</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#UMP152 - Prema Agus</h4>
+									<p>Pesanan Baru</p>
+									<span>14.30 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#M416AR - Ryan Ardito</h4>
+									<p>Pesanan Baru</p>
+									<span>11.15 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#AWM885 - Deva</h4>
+									<p>Pesanan Baru</p>
+									<span>22.50 - Kemarin</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#KAR998 - John Smith</h4>
+									<p>Pesanan Baru</p>
+									<span>09.30 - 2 Hari Lalu</span>
+								</div>
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<div class="img-profile">
+								<img src="images/profile1.jpg">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</section><!-- Top Nav -->
+
+		<section class="container-breadcrumb">
+			<div class="breadcrumb">
+				<a href="index.html">Home</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#">Account</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#" class="crumb-active">Product</a>
+			</div>
+		</section><!-- Breadcrumb -->
+
+		<section class="wrapper-content">
+			<div class="container-content">
+				<h1>Tambah Produk</h1>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="widget form-product">
+							<form method="post">
+								<div class="row">
+
+									<div class="col-md-4">
+										<div class="upload-img" >
+											<div class="upload-text">
+												<img src="images/icon/addImage.png">
+												<h3>Tarik Foto Kesini Atau <span>Cari</span></h3>
+											</div>
+											<div class="upload-success">
+												<img src="images/icon/checked.png">
+												<h3>Foto Sukses Diupload</h3>
+											</div>
+											<input type="file" name="foto" id="dragZone">
+										</div>
+									</div>
+
+									<div class="col-md-8">
+										<div class="text-form">
+
+											<div class="col-md-12 form-holder">
+												<label>Nama Produk</label>
+												<input type="text">
+											</div>
+
+											<div class="col-md-12 form-holder">
+												<label>Jenis Produk</label>
+												<div class="dropdown">
+											        <div class="select">
+											          <span>Pilih Jenis</span>
+											          <i class="fa fa-chevron-right"></i>
+											        </div>
+											        <input type="hidden" name="gender">
+											        <ul class="dropdown-menu">
+											          <li id="Makanan">Makanan</li>
+											          <li id="Minuman">Minuman</li>
+											          <li id="Lainnya">Lainnya</li>
+											        </ul>
+											    </div>
+											</div>
+
+											<div class="col-md-12 form-holder">
+												<label>Harga Produk</label>
+												<input min="0" class="numberFormat">
+											</div>
+
+											<div class="col-md-12 form-holder">
+												<label>Kategori</label>
+												<label class="container-check">Manis
+												  <input type="checkbox">
+												  <span class="checkmark"></span>
+												</label>
+												<label class="container-check">Asam
+												  <input type="checkbox">
+												  <span class="checkmark"></span>
+												</label>
+												<label class="container-check">Asin
+												  <input type="checkbox">
+												  <span class="checkmark"></span>
+												</label>
+												<label class="container-check">Pedas
+												  <input type="checkbox">
+												  <span class="checkmark"></span>
+												</label>
+											</div>
+
+											<div class="col-md-12 form-holder">
+												<label>Deskripsi Produk</label>
+												<textarea  rows="6"></textarea>
+											</div>
+
+											<div class="col-md-12">
+												<button class="btn btn-submit btn-merah">Tambah</button>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!-- Container-content -->
+		</section><!-- Wrapper-content -->
+
+	</div>
+
+	<div class="wrapper-alert">
+		<div class="col-md-3 icon-alert">
+			<i class="fas fa-check"></i>
+		</div>
+		<div class="col-md-9 text-alert">
+			<span>Sukses Tambah Produk</span>
+		</div>
+		<div class="alert-loader"></div>
+	</div>
+
+	<script src="js/transition.js"></script>
+	<script src="js/notif.js"></script>
+
+	<script>
+
+		function alertCust(){
+			$('.wrapper-alert').css({'transform': 'translateY(0)', 'opacity': '1'});
+			$('.text-alert').css({'animation': 'text-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both'});
+			$('.alert-loader').css({'width':'0', 'transition':'2s linear'});
+			$('.icon-alert').css({'animation':'bounce 1s ease'});
+
+			setInterval(function(){
+				$('.wrapper-alert').css({'transform': 'translateY(150%)', 'opacity': '0'});
+				setInterval(function(){
+					location.href="dashboard-product.html";
+				}, 400);
+			}, 2000);
+		}
+
+
+		$('.btn-submit').click(function(event){
+			event.preventDefault();
+			alertCust();
+		});
+
+		$('#dragZone').on('dragenter', function() {
+			$(this).parent().css({'background' : '#EAEAEA'});
+		});
+
+		$('#dragZone').on('dragleave', function() {
+			$(this).parent().css({'background' : 'none'});
+		});
+
+		$('#dragZone').on('mouseover', function() {
+			$(this).parent().css({'background' : '#EAEAEA'});
+		});
+		$('#dragZone').on('mouseleave', function() {
+			$(this).parent().css({'background' : 'none'});
+		});
+
+		$('#dragZone').on('drop', function() {
+			$(this).parent().css({'background' : 'none'});
+			$(this).siblings('.upload-text').remove();
+			$(this).siblings('.upload-success').css({'opacity' : '1'});
+		});
+
+		$('input.numberFormat').keyup(function(event) {
+
+		  if(event.which >= 37 && event.which <= 40) return;
+
+		  $(this).val(function(index, value) {
+		    return value
+		    .replace(/\D/g, "")
+		    .replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+		    ;
+		  });
+		});
+
+
+	
+	</script>
+
+	<script type="text/javascript">
+		$('.dropdown').click(function () {
+	        $(this).attr('tabindex', 1).focus();
+	        $(this).toggleClass('active');
+	        $(this).find('.dropdown-menu').slideToggle(300);
+	    });
+	    $('.dropdown').focusout(function () {
+	        $(this).removeClass('active');
+	        $(this).find('.dropdown-menu').slideUp(300);
+	    });
+	    $('.dropdown .dropdown-menu li').click(function () {
+	        $(this).parents('.dropdown').find('span').text($(this).text());
+	        $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+	    });
+
+
+	$('.dropdown-menu li').click(function () {
+	  var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
+	      msg = '<span class="msg">Hidden input value: ';
+	  $('.msg').html(msg + input + '</span>');
+	}); 
+	</script>
+
+</body>
+
+</html>

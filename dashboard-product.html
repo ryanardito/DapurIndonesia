@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product</title>
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/transition-page.css">
+	<link rel="icon" href="images/logo-red.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/chart.js"></script>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+	<div class="transition-screen">
+		<div class="loading-wrapper">
+			<img src="images/loading.gif">
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		
+		<nav class="side-nav">
+			
+			<div class="nav-logo">
+				<img src="images/logo-red.png">
+			</div>
+
+			<div class="nav-menu">
+				<ul>
+					<li><a href="dashboard.html"><i class="fas fa-chart-line"></i></a></li>
+					<li class="active"><a href="dashboard-product.html"><i class="fas fa-utensils"></i></a></li>
+					<li><a href="dashboard-transaction.html"><i class="fas fa-dolly-flatbed"></i></a></li>
+				</ul>
+			</div>
+
+		</nav>
+
+		<section class="top-nav">
+			
+			<div class="nav-branding">
+				<span><b>DAPUR</b> INDONESIA</span>
+			</div>
+			<div class="nav-top-menu">
+				<ul>
+					<li class="notif">
+						<a>
+							<i class="fas fa-bell"></i>
+						</a>
+
+						<div class="notif-popup">
+							<div class="header-notif">
+								<h4>Notification</h4>
+								<div class="notif-count">
+									<span>2</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#UMP152 - Prema Agus</h4>
+									<p>Pesanan Baru</p>
+									<span>14.30 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif thread">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#M416AR - Ryan Ardito</h4>
+									<p>Pesanan Baru</p>
+									<span>11.15 - Hari Ini</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#AWM885 - Deva</h4>
+									<p>Pesanan Baru</p>
+									<span>22.50 - Kemarin</span>
+								</div>
+							</div>
+
+							<div class="list-notif">
+								<div class="notif-icon">
+									<i class="fas fa-dolly-flatbed notif-merah"></i>
+								</div>
+								<div class="notif-text">
+									<h4>#KAR998 - John Smith</h4>
+									<p>Pesanan Baru</p>
+									<span>09.30 - 2 Hari Lalu</span>
+								</div>
+							</div>
+
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<div class="img-profile">
+								<img src="images/profile1.jpg">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</section>
+
+		<section class="container-breadcrumb">
+			<div class="breadcrumb">
+				<a href="index.html">Home</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#">Account</a>
+				<img class="arrow-crumb" src="images/icon/right.svg">
+				<a href="#" class="crumb-active">Product</a>
+			</div>
+		</section>
+
+		<section class="wrapper-content">
+			
+			<div class="container-content">
+
+				<div class="btn-add">
+					<a href="addProduct.html">Tambah Produk</a>
+				</div>
+
+				<h1>Makanan</h1>
+<!-- ========================= Makanan ========================= -->
+
+				<div class="container-makanan">
+					<div class="row">
+
+						<div class="col-md-4">
+							<div class="card">
+								<div class="col-md-5 img-product">
+									<img src="images/food/gado.jpg">
+								</div>
+								<div class="col-md-7 desc-product">
+									<h2>Gado - Gado</h2>
+									<p>Lontong, Kol, Tentang, Tahu, Telur, Saus Kacang</p>
+									<span>Rp. 15.000</span>
+								</div>
+								<div class="pref">
+									<i class="fas fa-ellipsis-v"></i>
+									<div class="pref-list">
+										<ul>
+											<li><a href="#">Edit</a></li>
+											<li><a class="btn-delete">Delete</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- col-md-4 -->
+
+						<div class="col-md-4">
+							<div class="card">
+								<div class="col-md-5 img-product">
+									<img src="images/food/ayambetutu.jpg">
+								</div>
+								<div class="col-md-7 desc-product">
+									<h2>Ayam Betutu</h2>
+									<p>Ayam kukus dengan bumbu Bali yang meresap</p>
+									<span>Rp. 45.000</span>
+								</div>
+								<div class="pref">
+									<i class="fas fa-ellipsis-v"></i>
+									<div class="pref-list">
+										<ul>
+											<li><a href="#">Edit</a></li>
+											<li><a class="btn-delete">Delete</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- col-md-4 -->
+
+						<div class="col-md-4">
+							<div class="card">
+								<div class="col-md-5 img-product">
+									<img src="images/food/ayamtaliwang.jpg">
+								</div>
+								<div class="col-md-7 desc-product">
+									<h2>Ayam Bakar Taliwang</h2>
+									<p>Ayam Bakar khas Lombok dengan bumbu pedas dan terasi Lombok</p>
+									<span>Rp. 25.000</span>
+								</div>
+								<div class="pref">
+									<i class="fas fa-ellipsis-v"></i>
+									<div class="pref-list">
+										<ul>
+											<li><a href="#">Edit</a></li>
+											<li><a class="btn-delete">Delete</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- col-md-4 -->
+
+						<div class="col-md-4">
+							<div class="card">
+								<div class="col-md-5 img-product">
+									<img src="images/food/sopbuntut.jpg">
+								</div>
+								<div class="col-md-7 desc-product">
+									<h2>Sop Buntut</h2>
+									<p>Lontong, Kol, Tentang, Tahu, Telur, Saus Kacang</p>
+									<span>Rp. 35.000</span>
+								</div>
+								<div class="pref">
+									<i class="fas fa-ellipsis-v"></i>
+									<div class="pref-list">
+										<ul>
+											<li><a href="#">Edit</a></li>
+											<li><a class="btn-delete">Delete</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- col-md-4 -->
+
+					</div>
+				</div><!-- container-makanan -->
+
+				<h1>Minuman</h1>
+<!-- ========================= Minuman ========================= -->
+
+				<div class="container-makanan">
+					<div class="row">
+
+						<div class="col-md-4">
+							<div class="card">
+								<div class="col-md-5 img-product">
+									<img src="images/food/gado.jpg">
+								</div>
+								<div class="col-md-7 desc-product">
+									<h2>Gado - Gado</h2>
+									<p>Lontong, Kol, Tentang, Tahu, Telur, Saus Kacang</p>
+									<span>Rp. 15.000</span>
+								</div>
+								<div class="pref">
+									<i class="fas fa-ellipsis-v"></i>
+									<div class="pref-list">
+										<ul>
+											<li><a href="#">Edit</a></li>
+											<li><a class="btn-delete">Delete</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- col-md-4 -->
+
+						<div class="col-md-4">
+							<div class="card">
+								<div class="col-md-5 img-product">
+									<img src="images/food/gado.jpg">
+								</div>
+								<div class="col-md-7 desc-product">
+									<h2>Ayam Betutu</h2>
+									<p>Lontong, Kol, Tentang, Tahu, Telur, Saus Kacang</p>
+									<span>Rp. 15.000</span>
+								</div>
+								<div class="pref">
+									<i class="fas fa-ellipsis-v"></i>
+									<div class="pref-list">
+										<ul>
+											<li><a href="#">Edit</a></li>
+											<li><a class="btn-delete">Delete</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- col-md-4 -->
+
+						<div class="col-md-4">
+							<div class="card">
+								<div class="col-md-5 img-product">
+									<img src="images/food/gado.jpg">
+								</div>
+								<div class="col-md-7 desc-product">
+									<h2>Ayam Bakar Kebuli</h2>
+									<p>Lontong, Kol, Tentang, Tahu, Telur, Saus Kacang</p>
+									<span>Rp. 15.000</span>
+								</div>
+								<div class="pref">
+									<i class="fas fa-ellipsis-v"></i>
+									<div class="pref-list">
+										<ul>
+											<li><a href="#">Edit</a></li>
+											<li><a class="btn-delete">Delete</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- col-md-4 -->
+
+						<div class="col-md-4">
+							<div class="card">
+								<div class="col-md-5 img-product">
+									<img src="images/food/gado.jpg">
+								</div>
+								<div class="col-md-7 desc-product">
+									<h2>Gado - Gado</h2>
+									<p>Lontong, Kol, Tentang, Tahu, Telur, Saus Kacang</p>
+									<span>Rp. 15.000</span>
+								</div>
+								<div class="pref">
+									<i class="fas fa-ellipsis-v"></i>
+									<div class="pref-list">
+										<ul>
+											<li><a href="#">Edit</a></li>
+											<li><a class="btn-delete">Delete</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- col-md-4 -->
+
+					</div>
+				</div><!-- container-makanan -->
+
+			</div><!-- container-content -->
+
+		</section> <!-- wrapper-content -->
+
+	</div>
+
+	<script src="js/transition.js"></script>
+	<script src="js/notif.js"></script>
+
+	<script>
+		
+		$(document).ready(function(){
+			$('.pref').click(function(){
+				$(this).children('.pref-list').toggleClass('pref-active');
+			});
+
+			$('.btn-delete').click(function(){
+				$(this).parentsUntil('.row').css({'width': '0', 'opacity' : '0', 'transition' : '1s ease'});
+			});
+		});
+
+
+	</script>
+
+</body>
+</html>
